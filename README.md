@@ -1,5 +1,4 @@
 # portfolio
-my portfolio
 
 Olá! Este é o meu portfolio! :)
 
