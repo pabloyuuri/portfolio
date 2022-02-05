@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body
+{ 
+  background-color: white;
+  color: black;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: #1c2225;
+}
+
+.header 
+{
+  color: white;
+  text-align: center;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.portfolio 
+{
+  flex-grow: 1;
+  min-width: 600px;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-projetos
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  height: 26vh;
+  width: 40vh;
+  border-radius: 2px;
+}
+
+.portfolio-projeto
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.portfolio-projetos-button
+{
+  width: auto;
+  padding: 5px;
+  color: black;
+  border-radius: 2px;
+  margin: 10px;
+}
+
+p{
+  margin: 10px;
+  padding: 5px;
+  font-size: larger;
+}
+
+.portfolio-projetos-link
+{
+  width: auto;
+  padding: 5px;
+  color: black;
+  border-radius: 2px;
+}
+
+
+.portfolio-img
+{
+  height: 440px;
+  width: 500;
+  border-radius: 7px;
+
+}
+
+.portfolio-projetos > *
+{
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.portfolio-projetos >  .active
+{
+  position: relative;
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.info
+{
+  opacity: 0;
+
+}
+
+.portfolio-projetos-texto 
+{
+  position: absolute;
+  text-align: center;
+  background: black;
+  color: white;
+  width: 100%;
+}
+
+.active
+{
+  opacity: 1;
+}
+
+.buttons 
+{
+  justify-content: center;
+  align-items: space-between;
+  display: flex;
+}
+
+.button
+{
+  width: auto;
+  margin: 10px;
+  padding: 10px;
+  font-size: large;
+  font-family: system-ui;
+  box-shadow: 5px 5px 15px rgb(0 0 0 / 20%);
+  border-radius: 2px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-proximo span:after {
+  content: '\00bb'; 	
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-voltar span:after
+{
+  content: '\00ab'; 	
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.button-proximo:hover span {
+  padding-right: 25px;
+}
+
+.button-voltar:hover span {
+  padding-left: 25px;
+}
+
+.button-proximo:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button-voltar:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+
+
+footer
+{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
+
+}
+
+
+.portfolio-github
+{
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.portfolio-github-qrcode
+{
+  width: 20vh;
+}
+
+.dados-pessoais
+{
+  color: white;
+}
+
+.dados-pessoais a
+{
+  color: white;
+}
+
+.dados-pessoais div
+{
+  width: auto;
+  margin: 10px;
+}
+
+
+.button-informacao-projeto
+{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border-radius: 4px;
+}
+
+.button-informacao-projeto img
+{
+  width: 36px;
+  height: 35px;
+}
+
+.button-informacao-projeto:hover {
+  background-color: gray; 
+  color: white;
+}
+
