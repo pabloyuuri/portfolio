@@ -3,90 +3,90 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> 
   <title>
-    Portfólio
+    Portfólio @pabloyuuri
   </title>
 
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="css/style-responsive.css" /> -->
 
 </head>
 
 <header>
-  <div class="header">
-    <h1>Developer Salesforce</h1>
-  </div>
+  <section class="header">
+    <h1>Meu Portfólio</h1>
+    <nav class="nav-button">
+      <button class="header-button-name">Pablo Yuri</button>
+      <ul class="header-redes-sociais">
+        <li><a href="https://www.linkedin.com/in/pabloyuri/" target="_blank">Linkedin</a></li>
+        <li><a href="https://wa.me/5585989270230?" target="_blank">WhatsApp</a></li>
+      </ul>
+    </nav>
+    
+  </section>
 </header>
 
 <body>
 
-  <section>
-    <section class="portfolio">
+  <section class="portfolio">
+    <div class="portfolio-projetos" data-slide="projetos">
 
-      <div class="portfolio-projetos" data-slide="projetos">
+      <div class="portfolio-projeto">
+        <button id="button-1" class="button-informacao-projeto"><img src="imgs/info.png" /></button>
 
-        <div class="portfolio-projeto">
-          <button id="button-1" class="button-informacao-projeto"><img src="imgs/info.png" /></button>
-
-          <div class="info">
-            <div class="portfolio-projetos-texto">
-              <p>Projeto - REST API</p>
-              <p>Requisitando API que retorna uma lista de campeões do game League Of Legends.</p>
-              <p>Mostrando propriedades do campeão, como o Attack, Defense, Magic e Difficulty.</p>
-              <button class="portfolio-projetos-button">
-                <a class="portfolio-projetos-link" href="https://pabloyuuri-developer-edition.na172.force.com/lol"
-                  target="_blank">Ver</a>
-              </button>
-            </div>
+        <div class="info portfolio-projetos-texto">
+          <p>Projeto - REST API</p>
+          <p>Requisitando API que retorna uma lista de campeões do game League Of Legends.</p>
+          <p>Mostrando propriedades dos campeões, como o Attack, Defense, Magic e Difficulty.</p>
+          <div class="portfolio-projeto-button-link">
+            <a class="portfolio-projeto-link" href="https://pabloyuuri-developer-edition.na172.force.com/lol"
+              target="_blank">Ver</a>
           </div>
-
-           <img class="portfolio-img" src="imgs/teemo.jpg" title="Projeto REST API - LOL" alt="Img 1">
         </div>
 
-        <div class="portfolio-projeto">
-          <button id="button-0" class="button-informacao-projeto"><img src="imgs/info.png" /></button>
-
-          <div class="info">
-            <div class="portfolio-projetos-texto">
-              <p>Projeto - REST API</p>
-              <p>Requisitando API que retorna uma lista países.</p>
-              <p>Mostrando a Bandeira, Nome e Siglas de cada país.</p>
-              <button class="portfolio-projetos-button">
-                <a class="portfolio-projetos-link" href="https://pabloyuuri-developer-edition.na172.force.com/countries"
-                  target="_blank">Ver</a>
-              </button>
-            </div>
-          </div>
-
-          <img class="portfolio-img" src="imgs/countries.jpg" title="Projeto REST API - Countries" alt="Img 2">
-        </div>
+        <img src="imgs/teemo.jpg" title="Projeto REST API - LOL" alt="Img 1">
       </div>
-    </section>
 
-    <div class="buttons">
+      <div class="portfolio-projeto">
+        <button id="button-0" class="button-informacao-projeto"><img src="imgs/info.png" /></button>
+
+        <div class="info portfolio-projetos-texto">
+          <p>Projeto - REST API</p>
+          <p>Requisitando API que retorna uma lista países.</p>
+          <p>Mostrando a Bandeira, Nome e Siglas de cada país.</p>
+          <div class="portfolio-projeto-button-link">
+            <a class="portfolio-projeto-link" href="https://pabloyuuri-developer-edition.na172.force.com/countries"
+              target="_blank">Ver</a>
+          </div>
+        </div>
+
+        <img src="imgs/countries.jpg" title="Projeto REST API - Countries" alt="Img 2">
+      </div>
+    </div>
+  </section>
+
+  <section class="buttons">
+    <div class="buttons-acoes">
       <button class="button button-voltar"><span>Voltar</span></button>
       <button class="button button-proximo"><span>Próximo</span></button>
     </div>
   </section>
 
+
+  <!-- <footer>
+    <section class="footer">
+      <section class="portfolio-github">
+        <div>
+          <h1>Meu Git 🖖</h1>
+          <img src="imgs/QRCode_Fácil.jpg" />
+        </div>
+      </section>
+    </section>
+  </footer> -->
 </body>
 
-<footer>
-  <section class="dados-pessoais">
-    <h1>Dados pessoais</h1>
-    <div>
-      <div>Nome: Pablo Yuri 🖖</div>
-      <div>Meu Linkedin:<a href="https://www.linkedin.com/in/pabloyuri/" target="_blank"> pabloyuri</a></div>
-      <div>Meu Wpp: <a href="https://wa.me/5585989270230?" target="_blank">5585989270230</a></div>
-    </div>
-  </section>
-  <section class="portfolio-github">
-    <div>
-      <h1>Meu Git 🖖</h1>
-      <img class="portfolio-github-qrcode" src="imgs/QRCode_Fácil.jpg" />
-    </div>
-  </section> 
-</footer>
+
 <script src="js/slide.js"></script>
 
 </html>

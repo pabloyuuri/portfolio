@@ -6,36 +6,59 @@
   font-family: "Poppins", sans-serif;
 }
 
+html, body
+{
+  width: 100%;
+  height: 100%;
+}
+
+
 body
 { 
   background-color: white;
   color: black;
-  min-height: 100vh;
-  min-width: 100vw;
   background: #1c2225;
+  
 }
-
 
 
 .header 
 {
   color: white;
-  text-align: center;
-  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 200px;
+}
+
+.header-redes-sociais
+{
+  list-style: none;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-left: 20px;
+}
+.header-redes-sociais li
+{
+  margin-left: 20px;
 }
 
+.header-redes-sociais li a
+{
+  text-decoration-style: wavy;
+  color: white;
+}
 
 .portfolio 
 {
-  flex-grow: 1;
-  min-width: 600px;
-  min-height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 310px;
 }
 
 .portfolio-projetos
@@ -43,92 +66,119 @@ body
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 26vh;
+  margin: 0 auto;
   max-width: 100%;
-  border-radius: 2px;
-}
 
+}
 .portfolio-projeto
 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
 }
 
-.portfolio-projetos-button
+
+.portfolio-projeto img
 {
-  width: auto;
-  padding: 5px;
-  color: black;
-  border-radius: 2px;
-  margin: 10px;
-}
-
-p{
-  margin: 10px;
-  padding: 5px;
-  font-size: larger;
-}
-
-.portfolio-projetos-link
-{
-  width: auto;
-  padding: 5px;
-  color: black;
   max-width: 100%;
-  border-radius: 2px;
 }
 
-
-.portfolio-img
-{
-  height: 440px;
-  max-width: 100%;
-  border-radius: 7px;
-
-}
 
 .portfolio-projetos > *
 {
   position: absolute;
   top: 0px;
-  opacity: 0;
+  display: none;
   pointer-events: none;
 }
 
 .portfolio-projetos >  .active
 {
   position: relative;
-  opacity: 1;
+  display: block;
   pointer-events: initial;
 }
 
+
+
 .info
 {
-  opacity: 0;
-
+  display: none;
 }
 
 .portfolio-projetos-texto 
 {
   position: absolute;
-  text-align: center;
+  text-align: left;
   background: black;
   color: white;
   width: 100%;
+  top: 20%;
+}
+
+.portfolio-projetos-texto p
+{
+  margin: 10px;
+  padding: 5px;
+  font-size: larger;
+}
+
+.portfolio-projeto-button-link
+{
+  
+  padding: 5px;
+  border-radius: 2px;
+  margin: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-informacao-projeto
+{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.button-informacao-projeto img
+{
+  width: 36px;
+  height: 35px;
+}
+
+.button-informacao-projeto:hover {
+  background-color: gray; 
+  color: white;
+}
+
+.portfolio-projeto-link
+{
+  width: auto;
+  padding: 5px;
+  color: white;
+  max-width: 100%;
+  border-radius: 2px;
+  
 }
 
 .active
 {
-  opacity: 1;
+  display: block;
 }
 
-.buttons 
+
+
+.buttons
+{
+  width: 100%;
+}
+
+.buttons-acoes 
 {
   justify-content: center;
-  align-items: space-between;
   display: flex;
+  margin: 10px;
 }
 
 .button
@@ -187,99 +237,47 @@ p{
 }
 
 
-footer
+
+
+
+
+.footer
 {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  background-color: black;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
 
+  position:absolute;
+	bottom:0;
+
+} 
+
+.portfolio-github img
+{
+  max-width: 100%;
 }
-
-
 .portfolio-github
 {
-  color: white;
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  width: 10vw;
+  height: 20vh;
 }
-
-.portfolio-github-qrcode
+footer .portfolio-github-qrcode
 {
-  width: 20vh;
-}
-
-.dados-pessoais
-{
-  color: white;
-}
-
-.dados-pessoais a
-{
-  color: white;
-}
-
-.dados-pessoais div
-{
-  width: auto;
-  margin: 10px;
+  /* width: 20vh; */
 }
 
 
-.button-informacao-projeto
-{
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  border-radius: 4px;
-}
+@media (max-width: 600px) {
+  .header-button-name {
+    display: block;
+  }
 
-.button-informacao-projeto img
-{
-  width: 36px;
-  height: 35px;
-}
-
-.button-informacao-projeto:hover {
-  background-color: gray; 
-  color: white;
-}
-
-
-
-
-@media (max-width: 600px)
-{
-  .portfolio-projeto img {
-    width: auto;
-  }  
-}
-
-@media (max-width: 600px)
-{
-  .buttons {
+  .header-redes-sociais {
+    display: none;
+  }
+  .nav-button.active .header-redes-sociais{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }  
-}
-
-@media (max-width: 600px)
-{
-  .info {
-    opacity: 1;
-  } 
-  
-  .portfolio-projetos-button {
-    width: 100px;
-    font-size: large;
   }
 }
