@@ -156,10 +156,10 @@ body
 {
   width: auto;
   padding: 5px;
-  color: white;
   max-width: 100%;
   border-radius: 2px;
-  
+  color: black;
+  background-color: white;
 }
 
 .active
